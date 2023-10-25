@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>AQ</title>
+		<meta name="description" content="An exploration of different scroll based layout switch animations." />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/cch1nog.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+		<script src="custom-slider.js" defer></script>
+		<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<!-- Include the Lottie library via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.2/lottie.min.js"></script>
+
+
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+	</head>
+	
+	<body class="">
+
+		<nav class="navbar">
+			<div class="navbar-logo"><a href="index.html"><img class="mobile mobile-img-nav" src="video/logo.png" alt="">
+				<video class="desktop" id="logo-video" src="video/logo-animation.mp4"  muted></video></a>
+			</div>
+			<div class="navbar-toggle">
+				<div class="toggle-icon">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+			</div>
+		</nav>
+		<div class="off-canvas-menu">
+			<button class="close-button">&times;</button>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#section1">Mission</a></li>
+				<li><a href="#section2">Blog</a></li>
+				<li><a href="#section4">Contacts</a></li>
+			</ul>
+		</div>
+
+		<section class="hero">
+			<div class="hero-content">
+				<h1>Get the Latest AI News</h1>
+				<p>Stay updated with the latest trends in artificial intelligence.</p>
+				<a href="blog.html" class="cta-button">Explore Articles</a>
+			</div>
+				<div class="image-hero-container">
+					<img src="img/hero.png">
+				</div>
+				
+			
+		</section>
+
+		
+
+		<h2 class="h2-grid">Browse Our Latest Articles</h2>
+		<div class="blog-grid">
+			<a href="article1.html" class="blog-card">
+				<img src="img/blog1.png" alt="AI in Healthcare">
+				<h2>Writing Prompts: Igniting Your Creative Spark</h2>
+				<p>Writing prompts can be your guiding star, leading you through the labyrinth of your imagination. This article will explore the world of writing prompts, providing insights, tips, and inspiration to help you harness their potential. </p>
+			</a>
+			<a href="article2.html" class="blog-card">
+				<img src="img/blog2.png" alt="Machine Learning Explained">
+				<h2>AI-Powered Writing Prompts: Unleashing Creativity in the Digital Age</h2>
+				<p>Discover how artificial intelligence can revolutionize the world of writing prompts, opening up new realms of creative inspiration and innovation.</p>
+			</a>
+
+			<a href="article1.html" class="blog-card">
+				<img src="img/blog3.png" alt="AI in Healthcare">
+				<h2>The Science Behind Effective Writing Prompts: A Deep Dive into Cognitive AI</h2>
+				<p>Delve into the fascinating intersection of artificial intelligence and cognitive psychology to understand the principles that make writing prompts a powerful tool for creativity.</p>
+			</a>
+			<a href="article2.html" class="blog-card">
+				<img src="img/blog4.png" alt="Machine Learning Explained">
+				<h2>AI-Generated Writing Prompts: Fueling Your Imagination with Endless Ideas</h2>
+				<p>Explore the incredible potential of AI-generated writing prompts to kickstart your imagination and keep your creative fire burning.</p>
+			</a>
+
+			<a href="article1.html" class="blog-card">
+				<img src="img/blog5.png" alt="AI in Healthcare">
+				<h2>Writing Prompts for Every Genre: AI's Role in Tailoring Inspiration</h2>
+				<p>Learn how AI technology can cater to your specific writing genre, offering tailored prompts that ignite your creativity, whether you're a poet, novelist, or journalist.</p>
+			</a>
+			<a href="article2.html" class="blog-card">
+				<img src="img/blog6.png" alt="Machine Learning Explained">
+				<h2>From Blank Page to Masterpiece: The Art of Crafting AI-Enhanced Writing Prompts</h2>
+				<p>Master the craft of constructing AI-enhanced writing prompts to guide your creative journey, from a blank page to a literary masterpiece.</p>
+			</a>
+
+			<a href="article1.html" class="blog-card">
+				<img src="img/blog7.png" alt="AI in Healthcare">
+				<h2>AI-Driven Creativity: Exploring the Connection Between Writing Prompts and Machine Learning</h2>
+				<p>Uncover the synergy between writing prompts and machine learning algorithms, and how they collaborate to elevate your creative writing endeavors.</p>
+			</a>
+			<a href="article2.html" class="blog-card">
+				<img src="img/blog8.png" alt="Machine Learning Explained">
+				<h2>Unlocking Your Writing Potential: A Comprehensive Guide to AI-Backed Writing Prompts</h2>
+				<p>This comprehensive guide takes you on a journey through the world of AI-backed writing prompts, helping you unlock your full writing potential.</p>
+			</a>
+		</div>
+
+
+
+		
+
+		
+		  
+		  
+		
+
+
+
+
+
+
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<!-- Slide 1 -->
+				<div class="swiper-slide" style="background: url(img/m1.png) center/cover;">
+					<div class="slide-content">
+						<h2 style="color: white;">Writing Prompts: Igniting Your Creative Spark</h2>
+						<p>Writing prompts can be your guiding star, leading you through the labyrinth of your imagination. This article will explore the world of writing prompts, providing insights, tips, and inspiration to help you harness their potential.</p>
+						<button onclick="window.location.href='article-one.html'">Read More</button>
+					</div>
+				</div>
+				
+				<!-- Slide 2 -->
+				<div class="swiper-slide" style="background: url(img/m2.png) center/cover;">
+					<div class="slide-content">
+						<h2>Writing Prompts: Igniting Your Creative Spark</h2>
+						<p>Writing prompts can be your guiding star, leading you through the labyrinth of your imagination. This article will explore the world of writing prompts, providing insights, tips, and inspiration to help you harness their potential.</p>
+						<button onclick="window.location.href='article-two.html'">Read More</button>
+					</div>
+				</div>
+				
+				<!-- Slide 3 -->
+				<div class="swiper-slide" style="background: url(img/m3.png) center/cover;">
+					<div class="slide-content">
+						<h2>Writing Prompts: Igniting Your Creative Spark</h2>
+						<p>Writing prompts can be your guiding star, leading you through the labyrinth of your imagination. This article will explore the world of writing prompts, providing insights, tips, and inspiration to help you harness their potential.</p>
+						<button onclick="window.location.href='article-three.html'">Read More</button>
+					</div>
+				</div>
+				
+				<!-- Add more slides as needed -->
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		<main>
+			
+			<section style="background-color: #eeeeee; border-radius: 10px;" class="project project--intro" id="section1">
+				
+					<span class="project__title-line">Creativity</span>
+					<span class="project__title-line">Stay Informed with the Latest AI News</span>
+				</h2>
+				<span class="project__label project__label--mission">Mission</span>
+				<div class="project__mission">
+					<p>Our dedicated team of AI experts scours the web for the most significant developments in the field of AI. From breakthroughs in machine learning to the ethical implications of AI, we keep you informed with unbiased, up-to-date news articles. Explore our news section to stay ahead of the curve in this rapidly evolving landscape. </p>
+					<p>Looking to build your AI skills or dive deeper into specific AI technologies? Our extensive library of tutorials covers a wide range of topics, from beginner-friendly introductions to advanced techniques. Whether you want to learn how to create your own neural networks, harness the power of natural language processing, or explore computer vision, our tutorials provide step-by-step guidance and hands-on examples to help you master AI.</p>
+				</div>
+			</section>
+			<div class="gallery-wrap">
+				<div class="gallery gallery--row" id="gallery-1">
+					<div class="gallery__item gallery__item--s" style="background-image:url(img/6.jpg)"></div>
+					<div class="gallery__item gallery__item--m" style="background-image:url(img/3.png)"></div>
+					<div class="gallery__item gallery__item--l" style="background-image:url(img/4.png)"></div>
+					<div class="gallery__item gallery__item--xl gallery__item--center" style="background-image:url(img/1.png)"></div>
+					<div class="gallery__item gallery__item--l" style="background-image:url(img/5.png)"></div>
+					<div class="gallery__item gallery__item--m" style="background-image:url(img/2.png)"></div>
+					<div class="gallery__item gallery__item--s" style="background-image:url(img/6.jpg)"></div>
+					<div class="caption">
+						AI is reshaping industries across the globe, and we're here to provide you with insights from the brightest minds in the field. Our interviews with AI researchers, thought leaders, and industry experts offer unique perspectives on the current state of AI and its potential impact on society. Learn from their experiences, stay informed about cutting-edge research, and gain valuable insights that can shape your AI journey.
+					</div>
+				</div>
+			</div>
+			
+			
+
+			
+
+
+
+
+
+
+
+
+  		
+			<section class="project project--details project--right" id="section2" style="background-color: #eeeeee; border-radius: 10px;">
+				
+				<span class="project__label project__label--default" style="color: #1f1f1f;">Blog</span>
+				<p>Our blog is your go-to resource for the latest trends, practical advice, and thought-provoking discussions in the field of artificial intelligence. We provide a wealth of knowledge to help you harness the true power of AI, whether you're interested in machine learning, deep learning, natural language processing, computer vision, or ethical AI practices.</p>
+				
+			</section>
+
+			<div id="lottie-container" style="width: 100%; height: 800px;"><h2 class="lottie-h2" style="text-align: center;">Follow Us to Stay Cooled</h2></div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<section class="project project--details project--left" id="section4">
+				<span class="project__label project__label--default" style="color: white;">Contacts</span>
+				<p>Reach out to us at <a href="..." style="color: white;">aq@contacts.com </a> and we will get back to you asap.</p>
+			</section>
+
+
+
+			<footer class="blog-footer">
+				<div class="footer-content">
+					<div class="socials">
+						<h4>Socials</h4>
+						<div class="social-icons">
+							<a href="#" class="icon-link">
+								<img class="icon-img" src="icons/insta-negative.png" alt="">
+							</a>
+							<a href="#" class="icon-link">
+								<img class="icon-img" src="icons/twit-negative.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					
+					
+					<div class="info">
+						<h4>Company</h4>
+						<ul>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms of Service</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+
+					<div class="logo">
+						<img src="video/logo.png" alt="Footer Logo">
+					</div>
+				</div>
+			</footer>
+			
+			
+		</main>
+
+	
+
+		
+		
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+		  var swiper = new Swiper(".mySwiper1", {
+			slidesPerView: "auto",
+			spaceBetween: 30,
+			pagination: {
+			  el: ".swiper-pagination1",
+			  clickable: true,
+			},
+		  });
+		</script>
+
+		<script>
+			// JavaScript to toggle the minimal animation class when the bar is clicked
+const toggleIcon = document.querySelector(".toggle-icon");
+const bars = document.querySelectorAll(".bar");
+
+toggleIcon.addEventListener("click", function () {
+  bars.forEach((bar) => {
+    bar.classList.toggle("minimal-animation"); // Toggle the minimal animation class
+  });
+});
+
+		</script>
+
+		
+			<!--SWIPER-2-->
+			<script>
+				const progressCircle = document.querySelector(".autoplay-progress svg");
+				const progressContent = document.querySelector(".autoplay-progress span");
+				var swiper = new Swiper(".mySwiper", {
+				  spaceBetween: 30,
+				  centeredSlides: true,
+				  autoplay: {
+					delay: 4500,
+					disableOnInteraction: false
+				  },
+				  pagination: {
+					el: ".swiper-pagination",
+					clickable: true
+				  },
+				  navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev"
+				  },
+				  on: {
+					autoplayTimeLeft(s, time, progress) {
+					  progressCircle.style.setProperty("--progress", 1 - progress);
+					  progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+					}
+				  }
+				});
+			  </script>
+
+
+			  <script src="smooth-scrolling.js"></script>
+			  <script src="lottie-animation.js"></script>
+		<script src="video-mobile.js"></script>
+		<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+		<script src="js/gsap.min.js"></script>
+		<script src="js/Flip.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="js/lenis.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script type="module" src="js/index.js"></script>
+		<script src="typemachine.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
